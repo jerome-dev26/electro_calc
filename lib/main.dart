@@ -2,6 +2,7 @@ import 'package:material_ui/material_ui.dart';
 import 'screens/ohms_law_screen.dart';
 import 'screens/voltage_drop_screen.dart';
 import 'screens/three_phase_screen.dart';
+import 'screens/motor_current_screen.dart';
 
 void main() => runApp(const ElectroCalcApp());
 
@@ -43,6 +44,8 @@ class HomeScreen extends StatelessWidget {
           'Single and three-phase cables', VoltageDropScreen()),
       _CalcEntry(Icons.electrical_services, 'Three-Phase Power',
           'kW, kVA, kVAr and amps', ThreePhaseScreen()),
+      _CalcEntry(Icons.settings, 'Motor Current',
+          'Full-load amps from kW or HP', MotorCurrentScreen()),
     ];
     return Scaffold(
       appBar: AppBar(title: const Text('ElectroCalc')),
