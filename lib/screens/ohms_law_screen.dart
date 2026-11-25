@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import '../logic/ohms_law.dart';
 
 class OhmsLawScreen extends StatefulWidget {

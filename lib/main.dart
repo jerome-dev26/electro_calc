@@ -1,6 +1,7 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'screens/ohms_law_screen.dart';
 import 'screens/voltage_drop_screen.dart';
+import 'screens/three_phase_screen.dart';
 
 void main() => runApp(const ElectroCalcApp());
 
@@ -40,6 +41,8 @@ class HomeScreen extends StatelessWidget {
           OhmsLawScreen()),
       _CalcEntry(Icons.trending_down, 'Voltage Drop',
           'Single and three-phase cables', VoltageDropScreen()),
+      _CalcEntry(Icons.electrical_services, 'Three-Phase Power',
+          'kW, kVA, kVAr and amps', ThreePhaseScreen()),
     ];
     return Scaffold(
       appBar: AppBar(title: const Text('ElectroCalc')),
